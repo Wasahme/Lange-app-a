@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/design_default_color_outline"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Device Type Icon -->
+        <ImageView
+            android:id="@+id/iconDeviceType"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_bluetooth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/design_default_color_primary" />
+
+        <!-- Device Class Icon -->
+        <ImageView
+            android:id="@+id/iconDeviceClass"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_phone"
+            app:layout_constraintStart_toEndOf="@id/iconDeviceType"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/design_default_color_on_surface" />
+
+        <!-- Device Name -->
+        <TextView
+            android:id="@+id/textViewDeviceName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/buttonConnect"
+            app:layout_constraintStart_toEndOf="@id/iconDeviceClass"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Samsung Galaxy S21" />
+
+        <!-- Device Address -->
+        <TextView
+            android:id="@+id/textViewDeviceAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:textColor="@color/design_default_color_on_surface_variant"
+            app:layout_constraintEnd_toEndOf="@id/textViewDeviceName"
+            app:layout_constraintStart_toStartOf="@id/textViewDeviceName"
+            app:layout_constraintTop_toBottomOf="@id/textViewDeviceName"
+            tools:text="AA:BB:CC:DD:EE:FF" />
+
+        <!-- Device Status -->
+        <TextView
+            android:id="@+id/textViewDeviceStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:layout_constraintEnd_toEndOf="@id/textViewDeviceName"
+            app:layout_constraintStart_toStartOf="@id/textViewDeviceName"
+            app:layout_constraintTop_toBottomOf="@id/textViewDeviceAddress"
+            tools:text="Paired" />
+
+        <!-- Signal Strength -->
+        <TextView
+            android:id="@+id/textViewSignalStrength"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:textColor="@color/design_default_color_on_surface_variant"
+            app:layout_constraintEnd_toEndOf="@id/textViewDeviceName"
+            app:layout_constraintStart_toStartOf="@id/textViewDeviceName"
+            app:layout_constraintTop_toBottomOf="@id/textViewDeviceStatus"
+            tools:text="Signal: Strong" />
+
+        <!-- Connect Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonConnect"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connect"
+            app:icon="@drawable/ic_connect"
+            app:iconSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
