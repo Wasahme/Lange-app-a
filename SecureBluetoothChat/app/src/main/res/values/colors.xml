@@ -1,0 +1,9 @@
+<resources>
+    <color name="colorPrimary">#1565C0</color>
+    <color name="colorPrimaryVariant">#42A5F5</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="colorWarning">#F44336</color>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorCard">#FFFFFF</color>
+    <color name="colorDarkBackground">#121212</color>
+</resources>
