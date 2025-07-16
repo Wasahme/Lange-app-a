@@ -17,7 +17,8 @@ class BluetoothChatApplication : Application() {
         // Initialize logging
         initializeLogging()
         
-        Timber.d("BluetoothChatApplication initialized")
+        Timber.d("Advanced BluetoothChatApplication initialized")
+        Timber.d("Features: Advanced Encryption, AI Processing, Mesh Networking, High-Quality Audio")
     }
 
     /**

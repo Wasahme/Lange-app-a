@@ -47,6 +47,11 @@ android {
         viewBinding true
         dataBinding true
         buildConfig true
+        compose true
+    }
+    
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.8'
     }
 
     packagingOptions {

@@ -1,9 +1,10 @@
 package com.bluetoothchat.encrypted.di
 
 import android.content.Context
-import com.bluetoothchat.encrypted.audio.AudioManager
-import com.bluetoothchat.encrypted.bluetooth.BluetoothManager
-import com.bluetoothchat.encrypted.crypto.CryptoManager
+import com.bluetoothchat.encrypted.ai.AIManager
+import com.bluetoothchat.encrypted.audio.AdvancedAudioManager
+import com.bluetoothchat.encrypted.bluetooth.AdvancedBluetoothManager
+import com.bluetoothchat.encrypted.crypto.AdvancedCryptoManager
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -11,33 +12,38 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-/**
- * Hilt module for providing application-level dependencies
- */
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
     @Provides
     @Singleton
-    fun provideCryptoManager(): CryptoManager {
-        return CryptoManager()
+    fun provideAdvancedCryptoManager(): AdvancedCryptoManager {
+        return AdvancedCryptoManager()
     }
 
     @Provides
     @Singleton
-    fun provideBluetoothManager(
+    fun provideAdvancedAudioManager(
+        cryptoManager: AdvancedCryptoManager
+    ): AdvancedAudioManager {
+        return AdvancedAudioManager(cryptoManager)
+    }
+
+    @Provides
+    @Singleton
+    fun provideAdvancedBluetoothManager(
         @ApplicationContext context: Context,
-        cryptoManager: CryptoManager
-    ): BluetoothManager {
-        return BluetoothManager(context, cryptoManager)
+        cryptoManager: AdvancedCryptoManager
+    ): AdvancedBluetoothManager {
+        return AdvancedBluetoothManager(context, cryptoManager)
     }
 
     @Provides
     @Singleton
-    fun provideAudioManager(
-        cryptoManager: CryptoManager
-    ): AudioManager {
-        return AudioManager(cryptoManager)
+    fun provideAIManager(
+        @ApplicationContext context: Context
+    ): AIManager {
+        return AIManager(context)
     }
 }

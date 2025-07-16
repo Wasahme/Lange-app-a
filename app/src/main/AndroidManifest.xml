@@ -44,10 +44,11 @@
         android:theme="@style/Theme.BluetoothChat"
         tools:targetApi="31">
 
-        <!-- Main Activity -->
+        <!-- Advanced Main Activity -->
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".ui.advanced.AdvancedMainActivity"
             android:exported="true"
+            android:theme="@style/Theme.BluetoothChat"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BluetoothChat.NoActionBar">
             <intent-filter>
@@ -63,12 +64,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BluetoothChat.NoActionBar" />
 
-        <!-- Chat Activity -->
+        <!-- Advanced Chat Activity -->
         <activity
-            android:name=".ui.chat.ChatActivity"
+            android:name=".ui.advanced.AdvancedChatActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.BluetoothChat.NoActionBar"
+            android:theme="@style/Theme.BluetoothChat"
             android:windowSoftInputMode="adjustResize" />
 
         <!-- Voice Call Activity -->
