@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:paddingHorizontal="16dp">
+
+    <!-- New Message Indicator -->
+    <View
+        android:id="@+id/viewNewMessageIndicator"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:background="@color/design_default_color_primary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/cardMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardMessage"
+        tools:visibility="visible" />
+
+    <!-- Message Bubble -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="8dp"
+        app:cardBackgroundColor="@color/design_default_color_surface"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/design_default_color_outline"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Message Text -->
+            <TextView
+                android:id="@+id/textViewMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/design_default_color_on_surface"
+                android:textIsSelectable="true"
+                tools:text="This is a received message that shows how incoming messages are displayed" />
+
+            <!-- Message Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Encryption Icon -->
+                <ImageView
+                    android:id="@+id/iconEncryption"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_lock"
+                    android:visibility="gone"
+                    app:tint="@color/design_default_color_primary"
+                    tools:visibility="visible" />
+
+                <!-- Time -->
+                <TextView
+                    android:id="@+id/textViewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                    android:textColor="@color/design_default_color_on_surface_variant"
+                    tools:text="14:32" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

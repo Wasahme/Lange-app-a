@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design 3 Light Theme Colors -->
+    <color name="md_theme_light_primary">#1565C0</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#D4E3FF</color>
+    <color name="md_theme_light_onPrimaryContainer">#001C3A</color>
+    
+    <color name="md_theme_light_secondary">#42A5F5</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#D8E4FF</color>
+    <color name="md_theme_light_onSecondaryContainer">#001D35</color>
+    
+    <color name="md_theme_light_tertiary">#4CAF50</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#C8E6C9</color>
+    <color name="md_theme_light_onTertiaryContainer">#002106</color>
+    
+    <color name="md_theme_light_error">#F44336</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_errorContainer">#FFCDD2</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+    
+    <color name="md_theme_light_background">#FAFAFA</color>
+    <color name="md_theme_light_onBackground">#1A1C1E</color>
+    
+    <color name="md_theme_light_surface">#FFFFFF</color>
+    <color name="md_theme_light_onSurface">#1A1C1E</color>
+    <color name="md_theme_light_surfaceVariant">#E0E2EC</color>
+    <color name="md_theme_light_onSurfaceVariant">#44474F</color>
+    
+    <color name="md_theme_light_outline">#74777F</color>
+    <color name="md_theme_light_outlineVariant">#C4C7CF</color>
+    
+    <!-- Material Design 3 Dark Theme Colors -->
+    <color name="md_theme_dark_primary">#90CAF9</color>
+    <color name="md_theme_dark_onPrimary">#003258</color>
+    <color name="md_theme_dark_primaryContainer">#004881</color>
+    <color name="md_theme_dark_onPrimaryContainer">#D4E3FF</color>
+    
+    <color name="md_theme_dark_secondary">#90CAF9</color>
+    <color name="md_theme_dark_onSecondary">#003258</color>
+    <color name="md_theme_dark_secondaryContainer">#004881</color>
+    <color name="md_theme_dark_onSecondaryContainer">#D8E4FF</color>
+    
+    <color name="md_theme_dark_tertiary">#A5D6A7</color>
+    <color name="md_theme_dark_onTertiary">#003910</color>
+    <color name="md_theme_dark_tertiaryContainer">#00531A</color>
+    <color name="md_theme_dark_onTertiaryContainer">#C8E6C9</color>
+    
+    <color name="md_theme_dark_error">#EF5350</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onErrorContainer">#FFCDD2</color>
+    
+    <color name="md_theme_dark_background">#121212</color>
+    <color name="md_theme_dark_onBackground">#E3E2E6</color>
+    
+    <color name="md_theme_dark_surface">#1E1E1E</color>
+    <color name="md_theme_dark_onSurface">#E3E2E6</color>
+    <color name="md_theme_dark_surfaceVariant">#44474F</color>
+    <color name="md_theme_dark_onSurfaceVariant">#C4C7CF</color>
+    
+    <color name="md_theme_dark_outline">#8E9199</color>
+    <color name="md_theme_dark_outlineVariant">#44474F</color>
+    
+    <!-- Additional Colors -->
+    <color name="blue_primary">#1565C0</color>
+    <color name="blue_light">#42A5F5</color>
+    <color name="blue_dark">#0D47A1</color>
+    
+    <color name="green_success">#4CAF50</color>
+    <color name="green_light">#81C784</color>
+    <color name="green_dark">#388E3C</color>
+    
+    <color name="red_error">#F44336</color>
+    <color name="red_light">#EF5350</color>
+    <color name="red_dark">#D32F2F</color>
+    
+    <color name="orange_warning">#FF9800</color>
+    <color name="orange_light">#FFB74D</color>
+    <color name="orange_dark">#F57C00</color>
+    
+    <!-- Bluetooth specific colors -->
+    <color name="bluetooth_blue">#1976D2</color>
+    <color name="bluetooth_connected">#4CAF50</color>
+    <color name="bluetooth_disconnected">#F44336</color>
+    <color name="bluetooth_scanning">#FF9800</color>
+    
+    <!-- Chat colors -->
+    <color name="message_sent_background">#E3F2FD</color>
+    <color name="message_received_background">#F5F5F5</color>
+    <color name="message_system_background">#EEEEEE</color>
+    
+    <!-- Status colors -->
+    <color name="status_online">#4CAF50</color>
+    <color name="status_offline">#9E9E9E</color>
+    <color name="status_connecting">#FF9800</color>
+    <color name="status_error">#F44336</color>
+    
+    <!-- Encryption colors -->
+    <color name="encryption_enabled">#4CAF50</color>
+    <color name="encryption_disabled">#F44336</color>
+    <color name="encryption_warning">#FF9800</color>
+    
+    <!-- Transparent colors -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+    
+    <!-- Gradient colors -->
+    <color name="gradient_start">#1565C0</color>
+    <color name="gradient_end">#42A5F5</color>
+    
+    <!-- Call screen colors -->
+    <color name="call_background">#1A1A1A</color>
+    <color name="call_accent">#42A5F5</color>
+    <color name="call_muted">#F44336</color>
+    <color name="call_active">#4CAF50</color>
+    
+    <!-- Legacy Material Design colors for compatibility -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#DE000000</color>
+    <color name="text_secondary">#8A000000</color>
+    <color name="text_disabled">#61000000</color>
+    <color name="text_hint">#61000000</color>
+    
+    <!-- Divider colors -->
+    <color name="divider">#1F000000</color>
+    <color name="divider_light">#0A000000</color>
+    
+    <!-- Ripple colors -->
+    <color name="ripple_light">#1F000000</color>
+    <color name="ripple_dark">#33FFFFFF</color>
+    
+</resources>
